@@ -2,6 +2,72 @@
   Welcome to Compass.
   In this file you should write your main styles. (or centralize your imports)
   Import this file using the following HTML or equivalent:
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 
-@import compass/reset
+@import "normalize"
+@import "variables"
+
+html
+  font-family: $bodyfont
+  background-color: $primarycolor
+
+body
+  font-size: $base-fontsize
+  background-color: $bgcolor
+  color: $darktextcolor
+
+a
+  color: $linkcolor
+  text-decoration: none
+  :hover
+    color: lighten($linkcolor, 20%)
+
+img
+  width: 100%
+  
+h1, h2, h3, h4, h5
+  font-weight: $bold-weight
+
+h1
+  font-size: 300%
+  
+h2
+  font-size: 200%
+  
+h3
+  font-size: 150%
+  
+h4
+  font-size: 120%
+
+h5
+  font-size: 100%
+
+/* -------------------------------------------
+ * LAYOUT
+ ---------------------------------------------*/
+
+header
+  background-color: $primarycolor
+  color: $lighttextcolor
+  
+#preface
+  background: url('../images/banner-bg.jpg') $primarycolor no-repeat center
+  overflow: hidden
+  height: 300px
+
+#postscript
+  background-color: $secondarycolor
+  color: $lighttextcolor
+  min-height: 100px
+  
+footer
+  background-color: $primarycolor
+  color: $lighttextcolor
+
+/*-------------------------------------------
+ * CLASSES
+ --------------------------------------------*/
+
+.site-logo
+  max-width: 400px
