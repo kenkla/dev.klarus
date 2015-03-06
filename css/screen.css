@@ -270,57 +270,62 @@ th {
   padding: 0;
 }
 
-/* line 10, ../sass/screen.sass */
+/* line 11, ../sass/screen.sass */
 html {
   font-family: "Lato", sans-serif;
   background-color: #5C6263;
 }
 
-/* line 14, ../sass/screen.sass */
+/* line 15, ../sass/screen.sass */
 body {
   font-size: 16px;
   background-color: #EDF3F5;
   color: #222;
+  line-height: 1.5;
 }
 
-/* line 19, ../sass/screen.sass */
+/* line 21, ../sass/screen.sass */
 a {
   color: #0093BF;
   text-decoration: none;
   hover-color: #26cdff;
 }
 
-/* line 25, ../sass/screen.sass */
+/* line 27, ../sass/screen.sass */
 img {
   width: 100%;
 }
 
-/* line 28, ../sass/screen.sass */
+/* line 30, ../sass/screen.sass */
 h1, h2, h3, h4, h5 {
-  font-weight: 600;
+  font-weight: 800;
 }
 
-/* line 31, ../sass/screen.sass */
+/* line 33, ../sass/screen.sass */
 h1 {
   font-size: 300%;
 }
 
-/* line 34, ../sass/screen.sass */
+/* line 36, ../sass/screen.sass */
 h2 {
   font-size: 200%;
+  text-transform: uppercase;
+  background-color: #8bbbc9;
+  color: #FFF;
+  padding: 5px;
 }
 
-/* line 37, ../sass/screen.sass */
+/* line 43, ../sass/screen.sass */
 h3 {
-  font-size: 150%;
+  font-size: 160%;
 }
 
-/* line 40, ../sass/screen.sass */
+/* line 46, ../sass/screen.sass */
 h4 {
   font-size: 120%;
 }
 
-/* line 43, ../sass/screen.sass */
+/* line 49, ../sass/screen.sass */
 h5 {
   font-size: 100%;
 }
@@ -328,36 +333,164 @@ h5 {
 /* -------------------------------------------
  * LAYOUT
  * --------------------------------------------- */
-/* line 50, ../sass/screen.sass */
+/* line 56, ../sass/screen.sass */
 header {
   background-color: #5C6263;
   color: #FFF;
 }
 
-/* line 54, ../sass/screen.sass */
+/* line 60, ../sass/screen.sass */
+#menu {
+  position: relative;
+  height: auto;
+  min-height: 35px;
+  background-color: #5C6263;
+}
+/* line 65, ../sass/screen.sass */
+#menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 69, ../sass/screen.sass */
 #preface {
   background: url("../images/banner-bg.jpg") #5C6263 no-repeat center;
   overflow: hidden;
   height: 300px;
 }
 
-/* line 59, ../sass/screen.sass */
+/* line 74, ../sass/screen.sass */
+#main {
+  position: relative;
+  height: auto;
+}
+
+/* line 78, ../sass/screen.sass */
+.main-content {
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: auto;
+  width: 60%;
+  height: auto;
+}
+
+/* line 83, ../sass/screen.sass */
+.sidebar {
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: auto;
+  right: 20px;
+  width: 40%;
+}
+
+/* line 87, ../sass/screen.sass */
 #postscript {
   background-color: #4B8FA3;
   color: #FFF;
-  min-height: 100px;
+  height: auto;
+  min-height: 120px;
+  position: relative;
 }
 
-/* line 64, ../sass/screen.sass */
+/* line 94, ../sass/screen.sass */
+.postscript-right, .postscript-left {
+  display: inline-block;
+}
+
+/* line 97, ../sass/screen.sass */
+.postscript-right {
+  width: 30%;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: auto;
+  right: 10px;
+}
+/* line 100, ../sass/screen.sass */
+.postscript-right img {
+  width: 100px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+/* line 105, ../sass/screen.sass */
+.postscript-right p {
+  font-size: 110%;
+}
+
+/* line 108, ../sass/screen.sass */
+.postscript-left {
+  width: 68%;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: auto;
+}
+
+/* line 112, ../sass/screen.sass */
 footer {
   background-color: #5C6263;
   color: #FFF;
 }
+/* line 115, ../sass/screen.sass */
+footer p {
+  margin: 0;
+  padding: 20px;
+}
+
+/*--------------------------------------------
+ * MENUS
+ * --------------------------------------------- */
+/* line 123, ../sass/screen.sass */
+nav {
+  font-size: 125%;
+  width: 100%;
+  padding: 5px 10px 0 10px;
+}
+/* line 127, ../sass/screen.sass */
+nav li {
+  display: inline-block;
+  float: left;
+  width: 10%;
+  padding: 5px auto 5px auto;
+  text-align: center;
+  background-color: #438092;
+  border-radius: 5px 5px 0 0;
+  margin-right: 5px;
+}
+/* line 136, ../sass/screen.sass */
+nav li:hover {
+  background-color: #3b7080;
+}
+/* line 138, ../sass/screen.sass */
+nav a {
+  color: #e6e6e6;
+  font-weight: 800;
+}
+/* line 141, ../sass/screen.sass */
+nav a:hover {
+  color: #FFF;
+}
 
 /*-------------------------------------------
- * CLASSES
+ * ELEMENTS
  * -------------------------------------------- */
-/* line 72, ../sass/screen.sass */
+/* line 149, ../sass/screen.sass */
 .site-logo {
   max-width: 400px;
+}
+
+/* line 152, ../sass/screen.sass */
+.byline {
+  font-size: 80%;
+}
+
+/* line 155, ../sass/screen.sass */
+.post-body {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d0e4ea;
 }

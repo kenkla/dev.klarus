@@ -25,22 +25,26 @@
 			<header>
 				<img class="site-logo" src="images/klarus-logo.png" alt="klar.us">
 			</header>
-			<nav>
-				<p>
-					<a href="/">Home</a>
-				</p>
-				<p>
-					<a href="/contact">Contact</a>
-				</p>
-			</nav>
+			<section id="menu">
+				<nav>
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/contact">Contact</a></li>
+					</ul>
+				</nav>
+			</section>
 			
 			<section id="preface">
 				
 			</section>
 			
 			<section id="main">
-				<div class="main-content">
+				<div id="limit">
+					<div class="main-content">
+						<h2>Ken's Blog</h2>
 					
+						<div id="kens-blog"> </div>
+					</div>
 				</div>
 				<div class="sidebar">
 					
@@ -48,7 +52,15 @@
 			</section>
 			
 			<section id="postscript">
-				
+				<div class="postcript-left">
+					
+				</div>
+				<div class="postscript-right">
+					<div class="ken-avatar"><img src="images/ken-portrait-color-offset.jpg" /></div>
+					<div class="contact-info">
+						<p>Ken Klatt<br />
+						Front-end Developer</p>
+				</div>
 			</section>
 
 			<footer>
@@ -60,5 +72,15 @@
 				</div>
 			</footer>
 		</div>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
+		<script id="blog-template" type="text/template">
+			{{#blogposts}}
+				<h3 class>{{title}}</h3>
+				<p class="byline">posted by {{author}} on {{date}}</p>
+				<p class="post-body">{{postbody}}</p>
+			{{/blogposts}}
+		</script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/blog.js"></script>
 	</body>
 </html>
