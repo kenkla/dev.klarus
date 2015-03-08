@@ -491,17 +491,24 @@ nav a:hover {
  * -------------------------------------------- */
 /* line 157, ../sass/screen.sass */
 .site-logo {
-  max-width: 400px;
+  max-width: 200px;
+  padding: 20px 20px 0 20px;
 }
 
-/* line 160, ../sass/screen.sass */
+/* line 161, ../sass/screen.sass */
+.slogan {
+  padding: 0 20px 20px 25px;
+  font-size: 120%;
+}
+
+/* line 165, ../sass/screen.sass */
 .post-title {
   border-top: 1px solid #d0e4ea;
   padding-top: 10px;
   margin-top: 50px;
 }
 
-/* line 165, ../sass/screen.sass */
+/* line 170, ../sass/screen.sass */
 .byline {
   font-size: 80%;
   margin-bottom: 20px;
