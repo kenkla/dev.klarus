@@ -41,7 +41,7 @@
 			<section id="main">
 				<div id="limit">
 					<div class="main-content">
-						<h2>Ken's Blog</h2>
+						<h2>Tips and Tricks</h2>
 					
 						<div id="kens-blog"> </div>
 					</div>
@@ -75,9 +75,9 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
 		<script id="blog-template" type="text/template">
 			{{#blogposts}}
-				<h3 class>{{title}}</h3>
+				<h3 class="post-title">{{title}}</h3>
 				<p class="byline">posted by {{author}} on {{date}}</p>
-				<p class="post-body">{{postbody}}</p>
+				<p class="post-body">{{{postbody}}}</p>
 			{{/blogposts}}
 		</script>
 		<script src="js/jquery.min.js"></script>
