@@ -1,0 +1,17 @@
+// Media Queries
+=breakpoint($bp) 
+  @if $bp == widest
+    @media (min-width: 1601px)
+      @content
+  @if $bp == wider
+    @media (max-width: 1600px)
+      @content
+  @if $bp == medium
+    @media (max-width: 1109px)
+      @content
+  @if $bp == smaller
+    @media (max-width: 767px)
+      @content
+  @if $bp == smallest
+    @media (max-width: 500px)
+      @content
