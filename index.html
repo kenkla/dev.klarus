@@ -47,7 +47,7 @@
 					</div>
 				</div>
 				<div class="sidebar">
-					
+					<div id="kens-twitter"> </div>
 				</div>
 			</section>
 			
@@ -94,7 +94,13 @@
 				<p class="post-body">{{{postbody}}}</p>
 			{{/blogposts}}
 		</script>
+		<script id="twitterfeed-template" type="text/template">
+			<img class="twitter-profile-pic" src={{profile_image_url}}>
+			<p class="tweet-header"><strong>{{name}}</strong>&nbsp;{{screen_name}}&nbsp;-&nbsp;{{created_at}}</p>
+			<p class="tweet-text">{{text}}</p>
+		</script>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/blog.js"></script>
+		<script src="js/twitter-feed.js"></script>
 	</body>
 </html>
