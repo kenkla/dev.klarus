@@ -417,7 +417,7 @@ header {
     width: 95%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   /* line 93, ../sass/screen.sass */
   .main-content {
     width: 90%;
@@ -444,31 +444,27 @@ header {
 #postscript {
   background-color: #4B8FA3;
   color: #FFF;
-  height: auto;
   min-height: 120px;
   position: relative;
 }
-
-/* line 121, ../sass/screen.sass */
-.postscript-right, .postscript-left {
-  display: inline-block;
+@media (max-width: 550px) {
+  /* line 114, ../sass/screen.sass */
+  #postscript {
+    min-height: 260px;
+  }
 }
 
-/* line 124, ../sass/screen.sass */
+/* line 122, ../sass/screen.sass */
 .postscript-left {
-  width: 40%;
+  width: 100%;
   position: absolute;
   top: 10px;
   bottom: 10px;
   left: 10px;
   right: auto;
 }
-/* line 127, ../sass/screen.sass */
-.postscript-left p {
-  font-size: 110%;
-}
 @media (max-width: 767px) {
-  /* line 124, ../sass/screen.sass */
+  /* line 122, ../sass/screen.sass */
   .postscript-left {
     width: 95%;
     position: absolute;
@@ -478,10 +474,14 @@ header {
     right: 10px 10px 10px;
   }
 }
+/* line 128, ../sass/screen.sass */
+.postscript-left p {
+  font-size: 110%;
+}
 
-/* line 133, ../sass/screen.sass */
+/* line 132, ../sass/screen.sass */
 .postscript-right {
-  width: 58%;
+  width: 100%;
   position: absolute;
   top: 10px;
   bottom: 10px;
@@ -489,7 +489,7 @@ header {
   right: 10px;
 }
 @media (max-width: 767px) {
-  /* line 133, ../sass/screen.sass */
+  /* line 132, ../sass/screen.sass */
   .postscript-right {
     width: 95%;
     position: absolute;
@@ -499,13 +499,17 @@ header {
     right: 10px;
   }
 }
+/* line 138, ../sass/screen.sass */
+.postscript-right p {
+  margin: 0;
+}
 
-/* line 140, ../sass/screen.sass */
+/* line 141, ../sass/screen.sass */
 footer {
   background-color: #5C6263;
   color: #FFF;
 }
-/* line 143, ../sass/screen.sass */
+/* line 144, ../sass/screen.sass */
 footer p {
   margin: 0;
   padding: 20px;
@@ -514,19 +518,19 @@ footer p {
 /*--------------------------------------------
  * MENUS
  * --------------------------------------------- */
-/* line 151, ../sass/screen.sass */
+/* line 152, ../sass/screen.sass */
 nav {
   font-size: 121%;
   width: 100%;
   padding: 2px 10px 0 10px;
 }
-@media (max-width: 500px) {
-  /* line 151, ../sass/screen.sass */
+@media (max-width: 550px) {
+  /* line 152, ../sass/screen.sass */
   nav {
     height: 80px;
   }
 }
-/* line 157, ../sass/screen.sass */
+/* line 158, ../sass/screen.sass */
 nav li {
   display: inline-block;
   float: left;
@@ -537,37 +541,37 @@ nav li {
   border-radius: 5px 5px 0 0;
   margin-right: 5px;
 }
-/* line 166, ../sass/screen.sass */
+/* line 167, ../sass/screen.sass */
 nav li:hover {
   background-color: #3b7080;
 }
 @media (max-width: 1109px) {
-  /* line 157, ../sass/screen.sass */
+  /* line 158, ../sass/screen.sass */
   nav li {
     width: 15%;
     font-size: 21.78px;
   }
 }
 @media (max-width: 767px) {
-  /* line 157, ../sass/screen.sass */
+  /* line 158, ../sass/screen.sass */
   nav li {
     width: 20%;
   }
 }
-@media (max-width: 500px) {
-  /* line 157, ../sass/screen.sass */
+@media (max-width: 550px) {
+  /* line 158, ../sass/screen.sass */
   nav li {
     width: 95%;
     border-radius: 5px;
     margin: 2px;
   }
 }
-/* line 177, ../sass/screen.sass */
+/* line 178, ../sass/screen.sass */
 nav a {
   color: #e6e6e6;
   font-weight: 400;
 }
-/* line 180, ../sass/screen.sass */
+/* line 181, ../sass/screen.sass */
 nav a:hover {
   color: #FFF;
 }
@@ -575,36 +579,42 @@ nav a:hover {
 /*-------------------------------------------
  * ELEMENTS
  * -------------------------------------------- */
-/* line 188, ../sass/screen.sass */
+/* line 189, ../sass/screen.sass */
 .site-logo {
   max-width: 200px;
   padding: 20px 20px 0 20px;
 }
 
-/* line 192, ../sass/screen.sass */
+/* line 193, ../sass/screen.sass */
 .slogan {
   padding: 0 20px 20px 25px;
   font-size: 120%;
 }
 
-/* line 196, ../sass/screen.sass */
+/* line 197, ../sass/screen.sass */
 .post-title {
   border-top: 1px solid #d0e4ea;
   padding-top: 10px;
   margin-top: 50px;
 }
 
-/* line 201, ../sass/screen.sass */
+/* line 202, ../sass/screen.sass */
 .byline {
   font-size: 80%;
   margin-bottom: 20px;
 }
 
-/* line 205, ../sass/screen.sass */
+/* line 206, ../sass/screen.sass */
 .ken-avatar {
   padding: 10px;
 }
-/* line 207, ../sass/screen.sass */
+@media (max-width: 550px) {
+  /* line 206, ../sass/screen.sass */
+  .ken-avatar {
+    display: none;
+  }
+}
+/* line 210, ../sass/screen.sass */
 .ken-avatar img {
   width: 100px;
   float: left;
@@ -612,20 +622,62 @@ nav a:hover {
   border-radius: 10px;
 }
 
+@media (max-width: 550px) {
+  /* line 216, ../sass/screen.sass */
+  .contact-info {
+    display: none;
+  }
+}
+
+/* line 220, ../sass/screen.sass */
+.ken-avatar-right {
+  display: none;
+}
+@media (max-width: 550px) {
+  /* line 220, ../sass/screen.sass */
+  .ken-avatar-right {
+    display: inline-block;
+  }
+}
+
+/* line 225, ../sass/screen.sass */
+.contact-info-right {
+  display: none;
+}
+@media (max-width: 550px) {
+  /* line 225, ../sass/screen.sass */
+  .contact-info-right {
+    display: inline-block;
+    margin: 10px 0 20px 10px;
+    vertical-align: middle;
+  }
+  /* line 231, ../sass/screen.sass */
+  .contact-info-right img {
+    width: 100px;
+    float: left;
+    border-radius: 10px;
+  }
+  /* line 235, ../sass/screen.sass */
+  .contact-info-right p {
+    float: right;
+    padding: 20px 0 0 10px;
+  }
+}
+
 /*--------------------------------------------
  * SOCIAL ICONS
  * --------------------------------------------- */
-/* line 217, ../sass/screen.sass */
+/* line 244, ../sass/screen.sass */
 .social-text {
   text-align: right;
   font-size: 110%;
 }
-/* line 220, ../sass/screen.sass */
+/* line 247, ../sass/screen.sass */
 .social-text p {
   padding: 0;
 }
 
-/* line 224, ../sass/screen.sass */
+/* line 251, ../sass/screen.sass */
 .social-icons li {
   border-radius: 10px;
   margin-right: 5px;
@@ -633,34 +685,43 @@ nav a:hover {
   float: right;
 }
 
-/* line 230, ../sass/screen.sass */
+/* line 257, ../sass/screen.sass */
 .twitter, .facebook, .linkedin, .github {
-  background: url("../images/social-icons.png");
+  background: url("../images/social-icons-200.png");
   display: block;
-  height: 30px;
-  width: 30px;
+  height: 50px;
+  width: 50px;
   text-indent: -9999px;
 }
 
-/* line 237, ../sass/screen.sass */
-.twitter {
-  hover-background-position: 0 -30px;
+/* line 265, ../sass/screen.sass */
+.twitter:hover {
+  background-position: 0 -50px;
 }
 
-/* line 241, ../sass/screen.sass */
+/* line 268, ../sass/screen.sass */
 .facebook {
-  background-position: -30px 0;
-  hover-background-position: -30px -30px;
+  background-position: -50px 0;
+}
+/* line 270, ../sass/screen.sass */
+.facebook:hover {
+  background-position: -50px -50px;
 }
 
-/* line 246, ../sass/screen.sass */
+/* line 273, ../sass/screen.sass */
 .linkedin {
-  background-position: -60px 0;
-  hover-background-position: -60px -30px;
+  background-position: -100px 0;
+}
+/* line 275, ../sass/screen.sass */
+.linkedin:hover {
+  background-position: -100px -50px;
 }
 
-/* line 251, ../sass/screen.sass */
+/* line 278, ../sass/screen.sass */
 .github {
-  background-position: -90px 0;
-  hover-background-position: -90px -30px;
+  background-position: -150px 0;
+}
+/* line 280, ../sass/screen.sass */
+.github:hover {
+  background-position: -150px -50px;
 }
