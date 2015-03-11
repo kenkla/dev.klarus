@@ -271,80 +271,90 @@ th {
   padding: 0;
 }
 
-/* line 13, ../sass/screen.sass */
+@font-face {
+  font-family: "Adventor";
+  src: url("texgyreadventor-regular-webfont.eot");
+  src: url("texgyreadventor-regular-webfont.eot?#iefix") format("embedded-opentype"), url("texgyreadventor-regular-webfont.woff") format("woff"), url("texgyreadventor-regular-webfont.ttf") format("truetype"), url("texgyreadventor-regular-webfont.svg#texgyreadventorregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 20, ../sass/screen.sass */
 html {
   font-family: "Lato", sans-serif;
-  background-color: #5C6263;
+  background-color: #072F38;
   overflow-x: hidden;
 }
 
-/* line 18, ../sass/screen.sass */
+/* line 25, ../sass/screen.sass */
 body {
   font-size: 18px;
-  background-color: #EDF3F5;
+  background-color: #F5FAFF;
   color: #222;
   line-height: 1.5;
   font-weight: 300;
 }
 @media (max-width: 1109px) {
-  /* line 18, ../sass/screen.sass */
+  /* line 25, ../sass/screen.sass */
   body {
     font-size: 15.99984px;
   }
 }
 @media (max-width: 767px) {
-  /* line 18, ../sass/screen.sass */
+  /* line 25, ../sass/screen.sass */
   body {
     font-size: 18px;
   }
 }
 
-/* line 29, ../sass/screen.sass */
+/* line 36, ../sass/screen.sass */
 a {
-  color: #0093BF;
+  color: #0090af;
   text-decoration: none;
-  hover-color: #26cdff;
+}
+/* line 39, ../sass/screen.sass */
+a:hover {
+  color: #49dfff;
 }
 
-/* line 35, ../sass/screen.sass */
+/* line 42, ../sass/screen.sass */
 img {
   width: 100%;
 }
 
-/* line 38, ../sass/screen.sass */
+/* line 45, ../sass/screen.sass */
 h1, h2, h3, h4, h5 {
   font-weight: bold;
 }
 
-/* line 41, ../sass/screen.sass */
+/* line 48, ../sass/screen.sass */
 h1 {
   font-size: 300%;
 }
 
-/* line 44, ../sass/screen.sass */
+/* line 51, ../sass/screen.sass */
 h2 {
   font-size: 200%;
 }
 
-/* line 47, ../sass/screen.sass */
+/* line 54, ../sass/screen.sass */
 h3 {
   font-size: 170%;
 }
 
-/* line 50, ../sass/screen.sass */
+/* line 57, ../sass/screen.sass */
 h4 {
   font-size: 110%;
 }
 
-/* line 53, ../sass/screen.sass */
+/* line 60, ../sass/screen.sass */
 h5 {
   font-size: 100%;
 }
 
-/* line 56, ../sass/screen.sass */
+/* line 63, ../sass/screen.sass */
 code {
   font-size: 75%;
-  background-color: #222;
+  background-color: #041c21;
   color: #E5E5E5;
   padding: 10px;
   width: 80%;
@@ -352,7 +362,7 @@ code {
   border-radius: 3px;
 }
 @media (max-width: 767px) {
-  /* line 56, ../sass/screen.sass */
+  /* line 63, ../sass/screen.sass */
   code {
     width: 95%;
   }
@@ -361,39 +371,39 @@ code {
 /* -------------------------------------------
  * LAYOUT
  * --------------------------------------------- */
-/* line 71, ../sass/screen.sass */
+/* line 78, ../sass/screen.sass */
 header {
-  background-color: #5C6263;
-  color: #FFF;
+  background-color: white;
+  color: #222;
 }
 
-/* line 75, ../sass/screen.sass */
+/* line 82, ../sass/screen.sass */
 #menu {
   position: relative;
   height: auto;
   min-height: 35px;
-  background-color: #5C6263;
+  background-color: #072F38;
 }
-/* line 80, ../sass/screen.sass */
+/* line 87, ../sass/screen.sass */
 #menu ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 84, ../sass/screen.sass */
+/* line 91, ../sass/screen.sass */
 #preface {
-  background: url("../images/banner-bg.jpg") #5C6263 no-repeat center;
+  background: url("../images/banner-bg.jpg") #072F38 no-repeat center;
   overflow: hidden;
   height: 300px;
 }
 
-/* line 89, ../sass/screen.sass */
+/* line 96, ../sass/screen.sass */
 #main {
   position: relative;
   height: auto;
 }
 
-/* line 93, ../sass/screen.sass */
+/* line 100, ../sass/screen.sass */
 .main-content {
   position: absolute;
   top: 20px;
@@ -403,28 +413,28 @@ header {
   width: 60%;
   height: auto;
 }
-/* line 97, ../sass/screen.sass */
+/* line 104, ../sass/screen.sass */
 .main-content h2 {
   text-transform: uppercase;
-  background-color: #8bbbc9;
+  background-color: #18a1c0;
   color: #FFF;
   padding: 5px 10px 5px 10px;
   border-radius: 3px;
 }
 @media (max-width: 767px) {
-  /* line 93, ../sass/screen.sass */
+  /* line 100, ../sass/screen.sass */
   .main-content {
     width: 95%;
   }
 }
-@media (max-width: 500px) {
-  /* line 93, ../sass/screen.sass */
+@media (max-width: 550px) {
+  /* line 100, ../sass/screen.sass */
   .main-content {
     width: 90%;
   }
 }
 
-/* line 108, ../sass/screen.sass */
+/* line 115, ../sass/screen.sass */
 .sidebar {
   position: absolute;
   top: 20px;
@@ -434,41 +444,37 @@ header {
   width: 40%;
 }
 @media (max-width: 767px) {
-  /* line 108, ../sass/screen.sass */
+  /* line 115, ../sass/screen.sass */
   .sidebar {
     width: 95%;
   }
 }
 
-/* line 114, ../sass/screen.sass */
+/* line 121, ../sass/screen.sass */
 #postscript {
-  background-color: #4B8FA3;
+  background-color: #127b93;
   color: #FFF;
-  height: auto;
   min-height: 120px;
   position: relative;
 }
-
-/* line 121, ../sass/screen.sass */
-.postscript-right, .postscript-left {
-  display: inline-block;
+@media (max-width: 550px) {
+  /* line 121, ../sass/screen.sass */
+  #postscript {
+    min-height: 260px;
+  }
 }
 
-/* line 124, ../sass/screen.sass */
+/* line 129, ../sass/screen.sass */
 .postscript-left {
-  width: 40%;
+  width: 100%;
   position: absolute;
   top: 10px;
   bottom: 10px;
   left: 10px;
   right: auto;
 }
-/* line 127, ../sass/screen.sass */
-.postscript-left p {
-  font-size: 110%;
-}
 @media (max-width: 767px) {
-  /* line 124, ../sass/screen.sass */
+  /* line 129, ../sass/screen.sass */
   .postscript-left {
     width: 95%;
     position: absolute;
@@ -478,10 +484,14 @@ header {
     right: 10px 10px 10px;
   }
 }
+/* line 135, ../sass/screen.sass */
+.postscript-left p {
+  font-size: 110%;
+}
 
-/* line 133, ../sass/screen.sass */
+/* line 139, ../sass/screen.sass */
 .postscript-right {
-  width: 58%;
+  width: 100%;
   position: absolute;
   top: 10px;
   bottom: 10px;
@@ -489,7 +499,7 @@ header {
   right: 10px;
 }
 @media (max-width: 767px) {
-  /* line 133, ../sass/screen.sass */
+  /* line 139, ../sass/screen.sass */
   .postscript-right {
     width: 95%;
     position: absolute;
@@ -499,13 +509,17 @@ header {
     right: 10px;
   }
 }
+/* line 145, ../sass/screen.sass */
+.postscript-right p {
+  margin: 0;
+}
 
-/* line 140, ../sass/screen.sass */
+/* line 148, ../sass/screen.sass */
 footer {
-  background-color: #5C6263;
+  background-color: #072F38;
   color: #FFF;
 }
-/* line 143, ../sass/screen.sass */
+/* line 151, ../sass/screen.sass */
 footer p {
   margin: 0;
   padding: 20px;
@@ -514,60 +528,60 @@ footer p {
 /*--------------------------------------------
  * MENUS
  * --------------------------------------------- */
-/* line 151, ../sass/screen.sass */
+/* line 159, ../sass/screen.sass */
 nav {
   font-size: 121%;
   width: 100%;
   padding: 2px 10px 0 10px;
 }
-@media (max-width: 500px) {
-  /* line 151, ../sass/screen.sass */
+@media (max-width: 550px) {
+  /* line 159, ../sass/screen.sass */
   nav {
     height: 80px;
   }
 }
-/* line 157, ../sass/screen.sass */
+/* line 165, ../sass/screen.sass */
 nav li {
   display: inline-block;
   float: left;
   width: 10%;
   padding: 5px auto 5px auto;
   text-align: center;
-  background-color: #438092;
+  background-color: #10687c;
   border-radius: 5px 5px 0 0;
   margin-right: 5px;
 }
-/* line 166, ../sass/screen.sass */
+/* line 174, ../sass/screen.sass */
 nav li:hover {
-  background-color: #3b7080;
+  background-color: #0d5565;
 }
 @media (max-width: 1109px) {
-  /* line 157, ../sass/screen.sass */
+  /* line 165, ../sass/screen.sass */
   nav li {
     width: 15%;
     font-size: 21.78px;
   }
 }
 @media (max-width: 767px) {
-  /* line 157, ../sass/screen.sass */
+  /* line 165, ../sass/screen.sass */
   nav li {
     width: 20%;
   }
 }
-@media (max-width: 500px) {
-  /* line 157, ../sass/screen.sass */
+@media (max-width: 550px) {
+  /* line 165, ../sass/screen.sass */
   nav li {
     width: 95%;
     border-radius: 5px;
     margin: 2px;
   }
 }
-/* line 177, ../sass/screen.sass */
+/* line 185, ../sass/screen.sass */
 nav a {
   color: #e6e6e6;
   font-weight: 400;
 }
-/* line 180, ../sass/screen.sass */
+/* line 188, ../sass/screen.sass */
 nav a:hover {
   color: #FFF;
 }
@@ -575,36 +589,45 @@ nav a:hover {
 /*-------------------------------------------
  * ELEMENTS
  * -------------------------------------------- */
-/* line 188, ../sass/screen.sass */
-.site-logo {
-  max-width: 200px;
-  padding: 20px 20px 0 20px;
+/* line 196, ../sass/screen.sass */
+.site-name {
+  font-family: "Adventor", sans-serif;
+  font-size: 325%;
+  color: #072F38;
+  line-height: 1;
+  padding: 10px 10px 0 20px;
 }
 
-/* line 192, ../sass/screen.sass */
+/* line 203, ../sass/screen.sass */
 .slogan {
   padding: 0 20px 20px 25px;
   font-size: 120%;
 }
 
-/* line 196, ../sass/screen.sass */
+/* line 207, ../sass/screen.sass */
 .post-title {
-  border-top: 1px solid #d0e4ea;
+  border-top: 1px solid #afe8f5;
   padding-top: 10px;
   margin-top: 50px;
 }
 
-/* line 201, ../sass/screen.sass */
+/* line 212, ../sass/screen.sass */
 .byline {
   font-size: 80%;
   margin-bottom: 20px;
 }
 
-/* line 205, ../sass/screen.sass */
+/* line 216, ../sass/screen.sass */
 .ken-avatar {
   padding: 10px;
 }
-/* line 207, ../sass/screen.sass */
+@media (max-width: 550px) {
+  /* line 216, ../sass/screen.sass */
+  .ken-avatar {
+    display: none;
+  }
+}
+/* line 220, ../sass/screen.sass */
 .ken-avatar img {
   width: 100px;
   float: left;
@@ -612,20 +635,62 @@ nav a:hover {
   border-radius: 10px;
 }
 
+@media (max-width: 550px) {
+  /* line 226, ../sass/screen.sass */
+  .contact-info {
+    display: none;
+  }
+}
+
+/* line 230, ../sass/screen.sass */
+.ken-avatar-right {
+  display: none;
+}
+@media (max-width: 550px) {
+  /* line 230, ../sass/screen.sass */
+  .ken-avatar-right {
+    display: inline-block;
+  }
+}
+
+/* line 235, ../sass/screen.sass */
+.contact-info-right {
+  display: none;
+}
+@media (max-width: 550px) {
+  /* line 235, ../sass/screen.sass */
+  .contact-info-right {
+    display: inline-block;
+    margin: 10px 0 20px 10px;
+    vertical-align: middle;
+  }
+  /* line 241, ../sass/screen.sass */
+  .contact-info-right img {
+    width: 100px;
+    float: left;
+    border-radius: 10px;
+  }
+  /* line 245, ../sass/screen.sass */
+  .contact-info-right p {
+    float: right;
+    padding: 20px 0 0 10px;
+  }
+}
+
 /*--------------------------------------------
  * SOCIAL ICONS
  * --------------------------------------------- */
-/* line 217, ../sass/screen.sass */
+/* line 254, ../sass/screen.sass */
 .social-text {
   text-align: right;
   font-size: 110%;
 }
-/* line 220, ../sass/screen.sass */
+/* line 257, ../sass/screen.sass */
 .social-text p {
   padding: 0;
 }
 
-/* line 224, ../sass/screen.sass */
+/* line 261, ../sass/screen.sass */
 .social-icons li {
   border-radius: 10px;
   margin-right: 5px;
@@ -633,34 +698,43 @@ nav a:hover {
   float: right;
 }
 
-/* line 230, ../sass/screen.sass */
+/* line 267, ../sass/screen.sass */
 .twitter, .facebook, .linkedin, .github {
-  background: url("../images/social-icons.png");
+  background: url("../images/social-icons-200.png");
   display: block;
-  height: 30px;
-  width: 30px;
+  height: 50px;
+  width: 50px;
   text-indent: -9999px;
 }
 
-/* line 237, ../sass/screen.sass */
-.twitter {
-  hover-background-position: 0 -30px;
+/* line 275, ../sass/screen.sass */
+.twitter:hover {
+  background-position: 0 -50px;
 }
 
-/* line 241, ../sass/screen.sass */
+/* line 278, ../sass/screen.sass */
 .facebook {
-  background-position: -30px 0;
-  hover-background-position: -30px -30px;
+  background-position: -50px 0;
+}
+/* line 280, ../sass/screen.sass */
+.facebook:hover {
+  background-position: -50px -50px;
 }
 
-/* line 246, ../sass/screen.sass */
+/* line 283, ../sass/screen.sass */
 .linkedin {
-  background-position: -60px 0;
-  hover-background-position: -60px -30px;
+  background-position: -100px 0;
+}
+/* line 285, ../sass/screen.sass */
+.linkedin:hover {
+  background-position: -100px -50px;
 }
 
-/* line 251, ../sass/screen.sass */
+/* line 288, ../sass/screen.sass */
 .github {
-  background-position: -90px 0;
-  hover-background-position: -90px -30px;
+  background-position: -150px 0;
+}
+/* line 290, ../sass/screen.sass */
+.github:hover {
+  background-position: -150px -50px;
 }

@@ -7,7 +7,7 @@
 		Remove this if you use the .htaccess -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-		<title>Alles klar</title>
+		<title>Alles klar: Fun with front-end design</title>
 		<meta name="description" content="Fun with front-end design">
 		<meta name="author" content="Ken Klatt">
 
@@ -22,17 +22,17 @@
 	<body>
 		<div>
 			<header>
-				<img class="site-logo" src="images/allesklar-logo.png" alt="klar.us">
+				<div class="site-name">alles klar</div>
 				<div class="slogan">fun with front-end design</div>
 			</header>
-			<section id="menu">
+			<!--<section id="menu">
 				<nav>
 					<ul>
 						<li><a href="/">Home</a></li>
 						<li><a href="/contact">Contact</a></li>
 					</ul>
 				</nav>
-			</section>
+			</section>-->
 			
 			<section id="preface">
 				
@@ -47,7 +47,7 @@
 					</div>
 				</div>
 				<div class="sidebar">
-					
+					<div id="kens-twitter"> </div>
 				</div>
 			</section>
 			
@@ -61,6 +61,11 @@
 				</div>
 				<div class="postscript-right">
 					<div class="social">
+						<div class="contact-info-right">
+							<div class="ken-avatar-right"><img src="images/ken-portrait-color-offset.jpg" /></div>
+							<p>Ken Klatt<br />
+							Front-end Developer</p>
+						</div>
 						<p class="social-text">Connect with Ken on social media</p>
 						<ul class="social-icons">
 							<li><a href="https://twitter.com/kenkla" class="twitter">twitter</a></li>
@@ -89,7 +94,13 @@
 				<p class="post-body">{{{postbody}}}</p>
 			{{/blogposts}}
 		</script>
+		<script id="twitterfeed-template" type="text/template">
+			<img class="twitter-profile-pic" src={{profile_image_url}}>
+			<p class="tweet-header"><strong>{{name}}</strong>&nbsp;{{screen_name}}&nbsp;-&nbsp;{{created_at}}</p>
+			<p class="tweet-text">{{text}}</p>
+		</script>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/blog.js"></script>
+		<!--<script src="js/twitter-feed.js"></script>-->
 	</body>
 </html>
