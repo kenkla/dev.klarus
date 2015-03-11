@@ -10,14 +10,21 @@
 @import "compass/layout/stretching"
 @import url(http://fonts.googleapis.com/css?family=Lato:900,400,300)
 
+@font-face
+  font-family: 'Adventor'
+  src: url('texgyreadventor-regular-webfont.eot')
+  src: url('texgyreadventor-regular-webfont.eot?#iefix') format('embedded-opentype'), url('texgyreadventor-regular-webfont.woff') format('woff'), url('texgyreadventor-regular-webfont.ttf') format('truetype'), url('texgyreadventor-regular-webfont.svg#texgyreadventorregular') format('svg')
+  font-weight: normal
+  font-style: normal
+
 html
   font-family: $bodyfont
-  background-color: $primarycolor
+  background-color: $darkcolor
   overflow-x: hidden
 
 body
   font-size: $base-fontsize
-  background-color: $bgcolor
+  background-color: $lightcolor
   color: $darktextcolor
   line-height: $base-lineheight
   font-weight: $regular-weight
@@ -29,8 +36,8 @@ body
 a
   color: $linkcolor
   text-decoration: none
-  :hover
-    color: lighten($linkcolor, 20%)
+  &:hover
+    color: lighten($linkcolor, 30%)
 
 img
   width: 100%
@@ -55,7 +62,7 @@ h5
   
 code
   font-size: 75%
-  background-color: #222
+  background-color: $console-color
   color: #E5E5E5
   padding: 10px
   width: 80%
@@ -69,20 +76,20 @@ code
  ---------------------------------------------*/
 
 header
-  background-color: $primarycolor
-  color: $lighttextcolor
+  background-color: $lighter-bgcolor
+  color: $darktextcolor
   
 #menu
   position: relative
   height: auto
   min-height: 35px
-  background-color: $primarycolor
+  background-color: $darkcolor
   ul
     margin: 0
     padding: 0
 
 #preface
-  background: url('../images/banner-bg.jpg') $primarycolor no-repeat center
+  background: url('../images/banner-bg.jpg') $darkcolor no-repeat center
   overflow: hidden
   height: 300px
 
@@ -96,7 +103,7 @@ header
   height: auto
   h2
     text-transform: uppercase
-    background-color: lighten($secondarycolor, 20%)
+    background-color: lighten($darker-bgcolor, 10%)
     color: $lighttextcolor
     padding: 5px 10px 5px 10px
     border-radius: 3px
@@ -112,7 +119,7 @@ header
     width: 95%
 
 #postscript
-  background-color: $secondarycolor
+  background-color: $darker-bgcolor
   color: $lighttextcolor
   min-height: 120px
   position: relative
@@ -139,7 +146,7 @@ header
     margin: 0
   
 footer
-  background-color: $primarycolor
+  background-color: $darkcolor
   color: $lighttextcolor
   p
     margin: 0
@@ -161,11 +168,11 @@ nav
     width: 10%
     padding: 5px auto 5px auto
     text-align: center
-    background-color: darken($secondarycolor, 5%)
+    background-color: darken($darker-bgcolor, 5%)
     border-radius: 5px 5px 0 0
     margin-right: 5px
     &:hover
-      background-color: darken($secondarycolor, 10%)
+      background-color: darken($darker-bgcolor, 10%)
     +breakpoint(medium)
       width: 15%
       font-size: ($base-fontsize*1.21)
@@ -186,16 +193,19 @@ nav
  * ELEMENTS
  --------------------------------------------*/
 
-.site-logo
-  max-width: 200px
-  padding: 20px 20px 0 20px
+.site-name
+  font-family: $brandingfont
+  font-size: 325%
+  color: $darkcolor
+  line-height: 1
+  padding: 10px 10px 0 20px
   
 .slogan
   padding: 0 20px 20px 25px
   font-size: 120%
 
 .post-title
-  border-top: 1px solid lighten($secondarycolor, 40%)
+  border-top: 1px solid lighten($darker-bgcolor, 50%)
   padding-top: 10px
   margin-top: 50px
 
