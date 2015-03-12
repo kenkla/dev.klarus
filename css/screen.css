@@ -618,16 +618,33 @@ nav a:hover {
 }
 
 /* line 216, ../sass/screen.sass */
+.sidebar-image {
+  padding: 20px;
+  margin-left: 5%;
+}
+@media (max-width: 767px) {
+  /* line 216, ../sass/screen.sass */
+  .sidebar-image {
+    display: none;
+  }
+}
+/* line 221, ../sass/screen.sass */
+.sidebar-image img {
+  width: 90%;
+  max-width: 800px;
+}
+
+/* line 225, ../sass/screen.sass */
 .ken-avatar {
   padding: 10px;
 }
 @media (max-width: 550px) {
-  /* line 216, ../sass/screen.sass */
+  /* line 225, ../sass/screen.sass */
   .ken-avatar {
     display: none;
   }
 }
-/* line 220, ../sass/screen.sass */
+/* line 229, ../sass/screen.sass */
 .ken-avatar img {
   width: 100px;
   float: left;
@@ -636,41 +653,41 @@ nav a:hover {
 }
 
 @media (max-width: 550px) {
-  /* line 226, ../sass/screen.sass */
+  /* line 235, ../sass/screen.sass */
   .contact-info {
     display: none;
   }
 }
 
-/* line 230, ../sass/screen.sass */
+/* line 239, ../sass/screen.sass */
 .ken-avatar-right {
   display: none;
 }
 @media (max-width: 550px) {
-  /* line 230, ../sass/screen.sass */
+  /* line 239, ../sass/screen.sass */
   .ken-avatar-right {
     display: inline-block;
   }
 }
 
-/* line 235, ../sass/screen.sass */
+/* line 244, ../sass/screen.sass */
 .contact-info-right {
   display: none;
 }
 @media (max-width: 550px) {
-  /* line 235, ../sass/screen.sass */
+  /* line 244, ../sass/screen.sass */
   .contact-info-right {
     display: inline-block;
     margin: 10px 0 20px 10px;
     vertical-align: middle;
   }
-  /* line 241, ../sass/screen.sass */
+  /* line 250, ../sass/screen.sass */
   .contact-info-right img {
     width: 100px;
     float: left;
     border-radius: 10px;
   }
-  /* line 245, ../sass/screen.sass */
+  /* line 254, ../sass/screen.sass */
   .contact-info-right p {
     float: right;
     padding: 20px 0 0 10px;
@@ -680,17 +697,17 @@ nav a:hover {
 /*--------------------------------------------
  * SOCIAL ICONS
  * --------------------------------------------- */
-/* line 254, ../sass/screen.sass */
+/* line 263, ../sass/screen.sass */
 .social-text {
   text-align: right;
   font-size: 110%;
 }
-/* line 257, ../sass/screen.sass */
+/* line 266, ../sass/screen.sass */
 .social-text p {
   padding: 0;
 }
 
-/* line 261, ../sass/screen.sass */
+/* line 270, ../sass/screen.sass */
 .social-icons li {
   border-radius: 10px;
   margin-right: 5px;
@@ -698,7 +715,7 @@ nav a:hover {
   float: right;
 }
 
-/* line 267, ../sass/screen.sass */
+/* line 276, ../sass/screen.sass */
 .twitter, .facebook, .linkedin, .github {
   background: url("../images/social-icons-200.png");
   display: block;
@@ -707,34 +724,34 @@ nav a:hover {
   text-indent: -9999px;
 }
 
-/* line 275, ../sass/screen.sass */
+/* line 284, ../sass/screen.sass */
 .twitter:hover {
   background-position: 0 -50px;
 }
 
-/* line 278, ../sass/screen.sass */
+/* line 287, ../sass/screen.sass */
 .facebook {
   background-position: -50px 0;
 }
-/* line 280, ../sass/screen.sass */
+/* line 289, ../sass/screen.sass */
 .facebook:hover {
   background-position: -50px -50px;
 }
 
-/* line 283, ../sass/screen.sass */
+/* line 292, ../sass/screen.sass */
 .linkedin {
   background-position: -100px 0;
 }
-/* line 285, ../sass/screen.sass */
+/* line 294, ../sass/screen.sass */
 .linkedin:hover {
   background-position: -100px -50px;
 }
 
-/* line 288, ../sass/screen.sass */
+/* line 297, ../sass/screen.sass */
 .github {
   background-position: -150px 0;
 }
-/* line 290, ../sass/screen.sass */
+/* line 299, ../sass/screen.sass */
 .github:hover {
   background-position: -150px -50px;
 }
