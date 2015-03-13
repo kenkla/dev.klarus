@@ -1,0 +1,9 @@
+{
+	"name": "devklarus,
+	"description": "a package for the alles klar website",
+	"author": "Ken Klatt <k@zva.us>"
+	"version": "0.0.1",
+	"dependencies": {
+		"nodemailer": ">= 1.3.2"
+	}
+}
