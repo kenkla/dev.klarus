@@ -1,0 +1,17 @@
+// General page elements
+
+html
+  font-family: $bodyfont
+  background-color: $darkcolor
+  overflow-x: hidden
+
+body
+  font-size: $base-fontsize
+  background-color: $lightcolor
+  color: $darktextcolor
+  line-height: $base-lineheight
+  font-weight: $regular-weight
+  +breakpoint(medium)
+    font-size: ($base-fontsize*0.88888)
+  +breakpoint(smaller)
+    font-size: $base-fontsize

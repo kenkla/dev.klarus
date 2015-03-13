@@ -1,0 +1,26 @@
+// Main section
+
+#main
+  position: relative
+  height: auto
+  
+.main-content
+  +stretch(20px, auto, 20px, 20px)
+  width: 60%
+  height: auto
+  h2
+    text-transform: uppercase
+    background-color: lighten($darker-bgcolor, 10%)
+    color: $lighttextcolor
+    padding: 5px 10px 5px 10px
+    border-radius: 3px
+  +breakpoint(smaller)
+    width: 95%
+  +breakpoint(smallest)
+    width: 90%
+  
+.sidebar
+  +stretch(20px, 20px, 20px, auto)
+  width: 40%
+  +breakpoint(smaller)
+    width: 95%

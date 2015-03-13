@@ -1,0 +1,28 @@
+// Postscript section
+
+#postscript
+  background-color: $darker-bgcolor
+  color: $lighttextcolor
+  min-height: 120px
+  position: relative
+  +breakpoint(smallest)
+    min-height: 260px
+  
+.postscript-left
+  width: 100%
+  +stretch(10px, auto, 10px, 10px)
+  +breakpoint(smaller)
+    width: 95%
+    +stretch(10px, 10px 10px 10px)
+  p
+    font-size: 110%
+  
+
+.postscript-right
+  width: 100%
+  +stretch(10px, 10px, 10px, auto)
+  +breakpoint(smaller)
+    width: 95%
+    +stretch(10px, 10px, 10px, 10px)
+  p
+    margin: 0
