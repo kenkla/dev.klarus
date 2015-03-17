@@ -19,4 +19,4 @@ transporter.sendMail({
 	to: 'receiver@address',
 	subject: 'subject',
 	text: 'hello world!'
-})
+});
